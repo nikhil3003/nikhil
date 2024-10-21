@@ -1,0 +1,85 @@
+:root {
+    --primary-color: #A8D44B; 
+    --secondary-color: #76C7E3; 
+    --accent-color: #FFA500; 
+    --background-color: #F5F5F5; 
+    --text-color: #000000; 
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    z-index: 1000; 
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-color);
+  }
+  
+  .nav-menu {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-menu.active {
+    display: block;
+  }
+  
+  .nav-link {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-right: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .nav-link:hover {
+    color: var(--accent-color);
+  }
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger.active {
+    display: flex;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color);
+    margin: 4px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: var(--primary-color);
+    }
+  
+    .nav-link {
+      padding: 1rem;
+      text-align: center;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  }
+  

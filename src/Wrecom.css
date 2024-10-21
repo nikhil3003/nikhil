@@ -1,0 +1,52 @@
+.workout-recommendations-container {
+    padding: 20px;
+    background-color: var(--primary-color);  /* Your primary color */
+    color: white;
+    display: inline-block;
+    border-radius: 5px;
+    margin-left: 250px;
+  }
+  
+  .preferences-section {
+    margin-bottom: 20px;
+  }
+  
+  .goal-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .recommendation-button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    background-color: var(--accent-color);  /* Your accent color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .recommended-workouts-section {
+    margin-top: 30px;
+  }
+  
+  .workouts-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .workout-card {
+    background-color: var(--secondary-color);  /* Your secondary color */
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    transition: 0.8s;
+  }
+  .workout-card:hover{
+    background-color: var(--accent-color);
+    cursor: pointer;
+  }
