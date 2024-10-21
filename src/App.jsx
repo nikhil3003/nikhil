@@ -31,7 +31,7 @@ const suggestions = [
 
 function App() {
   return (
-    <Router basename="/newff">
+    <Router basename="/nikhil">
       <Routes>
         <Route path="/" element={<><Navbar/><Fitness/><Welcome/><News articles={articles}/><Quote quote={quoteData.quote} author={quoteData.author}/><Footer/></>} />
         <Route path="/fitness" element={<><Navbar/><Userinput/><Wrecom/><Footer/></>} />
